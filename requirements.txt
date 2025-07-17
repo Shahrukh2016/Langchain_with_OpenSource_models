@@ -32,3 +32,6 @@ streamlit
 # Datatype Validations
 pydantic
 pydantic[email]
+
+# Visualizing langchain chains
+grandalf
