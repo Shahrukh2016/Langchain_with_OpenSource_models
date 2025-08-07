@@ -2,6 +2,9 @@
 langchain
 langchain-core
 
+# Langchain Experimental
+langchain_experimental
+
 # OpenAI Integration
 langchain-openai
 openai
@@ -19,6 +22,10 @@ transformers
 huggingface-hub
 sentence-transformers
 
+# Perplexity Integration
+langchain_perplexity
+langchain_community   ## community
+
 # Environment Variable Management
 python-dotenv
 
@@ -35,3 +42,15 @@ pydantic[email]
 
 # Visualizing langchain chains
 grandalf
+
+## Loaders
+PyPDF
+pymupdf
+bs4   ## beautiful soup for webbase loader
+
+## Youtube Transcript
+youtube_transcript_api
+
+## Built-in tools
+duckduckgo-search 
+ddgs
