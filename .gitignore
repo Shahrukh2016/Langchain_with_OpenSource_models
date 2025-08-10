@@ -16,3 +16,7 @@ __pycache__/
 # Logs and DB
 *.log
 *.sqlite3
+
+# Exclude streamlit file
+.streamlit
+chat_logs.csv
