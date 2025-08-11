@@ -1,4 +1,5 @@
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+from langchain_perplexity import ChatPerplexity
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from dotenv import load_dotenv
 import streamlit as st
@@ -15,11 +16,10 @@ if "chat_input" not in st.session_state:
     st.session_state.chat_input = ""
 
 # ------------------- API & MODEL -------------------
-HUGGINGFACEHUB_API_TOKEN = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
+PERPLEXITY_API_KEY = st.secrets["PERPLEXITY_API_KEY"]
 load_dotenv()
 
-llm = HuggingFaceEndpoint(repo_id='meta-llama/Llama-3.3-70B-Instruct')
-model = ChatHuggingFace(llm=llm, api_key=HUGGINGFACEHUB_API_TOKEN)
+model = ChatPerplexity(model= 'sonar', api_key=PERPLEXITY_API_KEY)
 
 # ------------------- CUSTOM CSS -------------------
 st.markdown("""

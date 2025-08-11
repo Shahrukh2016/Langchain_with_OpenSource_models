@@ -10,7 +10,7 @@ chat_template = ChatPromptTemplate([
 
 chat_history = []
 ## load chat history
-with open('3.Chatbot/chat_history.txt') as f:
+with open('3.langchain_structured_outputs/chat_history.txt') as f:
     chat_history.extend(f.readlines())
 
 # print(chat_history)
